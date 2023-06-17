@@ -23,6 +23,24 @@ body {
   padding: 0;
 }
 
+/* announcement bar */
+.announcement-bar {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0 15px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: var(--font-base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navbar */
+
 li,
 a,
 button {
@@ -90,6 +108,10 @@ button:hover {
   background-color: rgba(0, 179, 255, 0.8);
 }
 
+.cta button {
+  color: var(--white-color);
+}
+
 .toggle-button {
   position: absolute;
   top: 0.75rem;
@@ -107,6 +129,8 @@ button:hover {
   background-color: var(--primary-color);
   border-radius: 10px;
 }
+
+/* media queries */
 
 @media (max-width: 415px) {
   .toggle-button {
